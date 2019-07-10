@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+*::before, *::after { box-sizing: border-box; }
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: #282c34;
+}
+
+header h1 {
+  text-align:center;
+}
+
+main {
+  padding: 25px;
+}
+
+section {
+  margin-top: 100px;
+}
+
+article {
+  width: 90%;
+  margin: 0 auto 100px auto;
+  padding: 25px;
+  color: black;
+  background-color:white;
+  border: 2px solid #61DAFB;
+  border-radius: 5px;
+}
+
+article h2 {
+  margin-bottom: 50px;
+}
+
+hr {
+  border-style:solid;
+  border: 0.5px solid black;
+  margin: 50px auto;
+  width: 90%;
+}
+
+/* =============================================================================
+                              Typography
+============================================================================= */
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 25px 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+h1 { font-size: 40px; }
+h2 { font-size: 32px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 16px;}
+
+p {
+  margin-top: 0;
+  margin-bottom: 32px;
+  line-height: 2;
+}
+
+pre {
+  display: block;
+  margin: 32px auto;
+  padding: 0;
+  width: 90%;
+  font-family: monospace;
+  font-size: 16px;
+  background-color: lightGray;
+  border: 1px solid gray;
+  border-radius: 5px;
+  overflow: auto;
+  -ms-overflow-style: scrollbar;
+}
+
+pre code {
+  position: relative;
+  line-height: 1.15;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius:0px;
+}
+
+code {
+  padding: 0 5px;
+  color: #282c34;
+  background-color: lightGray;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+a {
+  color: #61DAFB;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 50px 0;
+}
+
+li {
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+button,
+[type="button"]
+[type="reset"],
+[type="submit"] {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+  text-transform: none;
+  border-radius: 0;
+  overflow: visible;
+  -webkit-appearance: button;
+}
+
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+.highlight {
+  color: #61DAFB;
+}
+
+.aside {
+  width: 90%;
+  margin: 50px auto;
+  padding: 25px;
+  background-color: floralwhite;
+  border: 1px solid #282c34;
+  border-radius: 5px;
+}
+
+
+/* =============================================================================
+                              form styles
+============================================================================= */
+
+
+#form-container {
+  display: flex;
+  justify-content: center;
+}
+
+#form-container form {
+  flex: 1;
+  padding: 25px;
+  background-color:floralWhite;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#form-container form label {
+  font-weight: bold;
+}
+
+#form-container form input {
+  width: 100%;
+  margin: 12.5px 0 25px 0;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+#set-cookie-form {
+  margin-right: 25px;
+}
+
+#unset-cookie-form {
+  position: relative;
+}
+
+#set-cookie-form button {
+  width: 100%;
+  color: white;
+  background-color: #61DAFB;
+  border: 1px solid rgba(0,0,0,0.25);
+  border-radius: 5px;
+}
+
+#unset-cookie-form button {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  width: calc(100% - 50px);
+  color: white;
+  background-color: #61DAFB;
+  border: 1px solid rgba(0,0,0,0.25);
+  border-radius: 5px;
+}
+
+#set-cookie-form button:hover {
+  background-color: rgb(0,200,0);
+}
+
+#unset-cookie-form button:hover {
+  background-color: rgb(200,0,0);
+}
